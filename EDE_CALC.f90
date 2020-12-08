@@ -12,11 +12,11 @@ CONTAINS
             DO J = 2, M-1
                 U(I,J) = (UANT(I-1,J) + UANT(I+1,J) + UANT(I,J-1) + UANT(I,J+1)) / 4.
             END DO
-!            U(I,M) = U(I,M-1)  !Contorno de Neumann derecha
-!            U(I,1) = U(1,2)    !Contorno de Neumann izquierda
         END DO
-!        U(N,:) = U(N-1,:)      !Contorno de Neumann abajo
-!        U(1,:) = U(2,:)        !Contorno de Neumann arriba
+!        U(:,M) = U(:,M-1)       !Contorno de Neumann derecha    dx/dt = 0
+!        U(:,1) = U(:,2)         !Contorno de Neumann izquierda  dx/dt = 0
+!        U(N,:) = U(N-1,:)       !Contorno de Neumann abajo      dy/dt = 0
+!        U(1,:) = U(2,:)         !Contorno de Neumann arriba     dy/dt = 0
         !
 !        CALL BORDESINTERNOS(U)  !COMENTAR SI NO HAY BORDES INTERNOS
     END SUBROUTINE
@@ -31,10 +31,10 @@ CONTAINS
             DO J = 2, M-1
                 U(I,J) = (U(I-1,J) + U(I+1,J) + U(I,J-1) + U(I,J+1)) / 4.
             END DO
-            !U(I,M) = U(I,M-1)  !Contorno de Neumann derecha
-            !U(I,1) = U(1,2)    !Contorno de Neumann izquierda
         END DO
-        !U(N,:) = U(N-1,:)      !Contorno de Neumann abajo
-        !U(1,:) = U(2,:)        !Contorno de Neumann arriba
+!        U(:,M) = U(:,M-1)       !Contorno de Neumann derecha    dx/dt = 0
+!        U(:,1) = U(:,2)         !Contorno de Neumann izquierda  dx/dt = 0
+!        U(N,:) = U(N-1,:)       !Contorno de Neumann abajo      dy/dt = 0
+!        U(1,:) = U(2,:)         !Contorno de Neumann arriba     dy/dt = 0
     END SUBROUTINE
 END MODULE
