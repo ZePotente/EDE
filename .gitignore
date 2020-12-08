@@ -1,6 +1,7 @@
 EDE
+Resultados
+moduloVyM.f90
 *.mod
 *.o
-Resultados
 *.txt
 *.png
