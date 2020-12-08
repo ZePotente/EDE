@@ -1,7 +1,6 @@
 PROGRAM EDE    
     !Modulo
     USE VYM_CALCULOS
-    USE VYM_MANIP
     USE VYM_IO
     USE EDE_SETUP
     USE EDE_CALC
