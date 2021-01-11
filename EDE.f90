@@ -7,7 +7,7 @@ PROGRAM EDE
     !Este programa resuelve Ecuaciones Diferenciales a Derivadas Parciales Elípticas, por Diferencias Finitas.
     !La idea es ser capaz de armar un sistema de ecuaciones que represente las interacciones 
     !entre los nodos de una determinada geometría rectangular.
-    !Si la geometría no es rectangular, se la hace agregando nodos donde corresponda. (pendiente)
+    !Si la geometría no es rectangular, se la hace agregando nodos donde corresponda.
 
     !Ver opción de enviar los bordes en archivo (o en el mismo código)
     !Y detectar su presencia con el PRESENT(). Si está es de Dirichlet y si no, de Neumann.

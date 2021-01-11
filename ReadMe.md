@@ -1,1 +1,1 @@
-Programa que calcula la solución numérica de un problema de Ecuaciones Diferenciales a Derivadas Parciales Elípticas.
+Compilar moduloVyM, luego EDE_CALC y EDE_SETUP, y por último EDE.
